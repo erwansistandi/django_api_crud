@@ -1,0 +1,3 @@
+CMD python manage.py dumpdata > datadump.json
+CMD python manage.py migrate --run-syncdb
+CMD python manage.py loaddata datadump.json
